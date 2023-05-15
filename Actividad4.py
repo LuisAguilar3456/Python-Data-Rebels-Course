@@ -1,7 +1,7 @@
-x,y=24,6
-x//=2
-y+=15
-y*=3
+x,y=24,6 #2x=24, #1/3y-15=6
+x//=2 #x=24/2
+y+=15 #1/3y=6+15
+y*=3 #y=(6+15)*3
 print("Yo tengo",x,"de edad")
 print("Mi hermana tiene",y,"de edad")
 if x>y:
