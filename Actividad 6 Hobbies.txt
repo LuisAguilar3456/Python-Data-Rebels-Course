@@ -1,0 +1,34 @@
+                Algoritmo de mis hobbies (Ver Futbol)
+1: Buscar el día y la hora del partido de mi interes
+2: Poner una alarma 1 hora antes de que comience el partido
+3: Esperar a que llegue el día del evento y que suene la alarma
+4: Salir de mi casa al Oxxo
+5: Seleccionar la botana de mi antojo en ese momento
+6: Verificar que haya botana
+    6.1: Sino hay botana, seleccionar otro tipo de comida
+7: Pagar lo que compre
+8: Dirigirme a mi casa
+9: Buscar el canal en el que van a trasnmitir el partido
+    9.1: En caso de no encontrar el partido en tele abierta, buscar en internet 
+10: Abrir la botana y vaciarla en algun molde
+11: Sentarme y disfrutar del partido mientras como
+12: Una vez que se acabe el partido, apagar la tele 
+13: Regresar a mi actividad cotidiana
+
+                Algoritmo de un proceso de venta (Cuando voy al HEB)
+1: Revisar con que alimentos cuento en mi casa
+2: Hacer una lista de los alimentos que me hacen falta 
+3: Dirigirme al HEB mas cercano
+4: Entrar al HEB y buscar especificamente los alimentos que estan escritos en mi lista 
+    4.1: En caso de no contar con existencia, recurrir a un producto similar
+5: Recorrer los pasillos en caso de que pueda ver algo mas de mi interes
+    5.1: Agregar a mi compra algun producto de mi interes en caso de existir
+6: Dirigirme a la caja
+7: Colocar mis productos sobre la banda
+8: Revisar el total de mi compra y verificar si cuento con el dinero necesario en efectivo
+    8.1: Pagar en efectivo en caso de que contar con el suficiente
+    8.2: En caso de no ser suficiente el efectivo, comentar a la acajera que mi compra sera con tarjeta
+        8.2.1. Pagar con la tarjeta
+    8.3: Verificar que mi compra haya sido correcta
+9: Salir del HEB y dirigirme a mi casa
+10: Acomodar los productos que acabo de comprar
