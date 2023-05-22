@@ -1,0 +1,40 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt 
+###########################SELECCIÓN DE COMPETENCIA MAS CERCANA########################
+Excel=pd.read_csv("athlete_events.csv")
+print(Excel.head())
+MasReciente=Excel.copy()
+Cercano=np.max(MasReciente["Year"])
+print("La competencia mas reciente fue en",Cercano)
+MasReciente=MasReciente[MasReciente["Year"]==Cercano]
+print(MasReciente)
+print("")
+print("")
+###############################GRAFICA DE MEDALLAS##################################    
+Medallas=MasReciente.dropna(subset="Medal")
+CantidadMedallas=Medallas["Medal"].value_counts()
+CantidadMedallas=CantidadMedallas.to_frame()
+CantidadMedallas=CantidadMedallas.reset_index()
+TipoMedallas=CantidadMedallas["index"].to_list()
+NumeroMedallas=CantidadMedallas["Medal"].to_list()
+print(TipoMedallas,NumeroMedallas)
+print("")
+print("")
+plt.figure(1)
+plt.pie(NumeroMedallas,labels=TipoMedallas,autopct='%1.1f%%')
+plt.title("Cantidad de Medallas")
+plt.savefig('Medallas.png')
+plt.show()
+##############################GRAFICA DE DEPORTES###################################
+CantidadDeportes=MasReciente["Sport"].value_counts()
+CantidadDeportes=CantidadDeportes.to_frame().reset_index()
+print(CantidadDeportes)
+Deporte=CantidadDeportes["index"].to_list()
+Deportistas=CantidadDeportes["Sport"].to_list()
+print(Deporte,Deportistas)
+plt.figure(2)
+plt.pie(Deportistas,labels=Deporte,autopct='%1.1f%%', textprops={'fontsize': 5})
+plt.title("Cantidad de deportistas por deporte")
+plt.savefig('Deportes.png')
+plt.show()
